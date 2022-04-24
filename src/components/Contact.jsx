@@ -16,7 +16,7 @@ const StyledContactSection = styled.section`
 
 const ContactSection = () => {
   return (
-    <StyledContactSection>
+    <StyledContactSection id="contact">
       <h2>Contact</h2>
     </StyledContactSection>
   );

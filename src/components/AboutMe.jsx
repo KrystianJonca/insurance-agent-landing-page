@@ -60,7 +60,7 @@ const StyledAboutMe = styled.section`
 
 const AboutMe = () => {
   return (
-    <StyledAboutMe id="about">
+    <StyledAboutMe id="aboutme">
       <div className="aboutme-container">
         <div className="aboutme-container_image">
           <img src={Picture} alt="Women's picture" />
