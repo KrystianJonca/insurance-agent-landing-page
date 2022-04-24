@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
-import Menu from './navbar/Menu';
 
 const StyledFooter = styled.footer`
   background-color: ${({ theme }) => theme.navy};
