@@ -3,9 +3,6 @@ import Menu from './Menu';
 import BurgerMenu from './BurgerMenu';
 
 const StyledNav = styled.nav`
-  width: min(100% - 2rem, 1080px);
-  margin-inline: auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;

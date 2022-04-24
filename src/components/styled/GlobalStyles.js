@@ -2,9 +2,17 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
   :root {
-    --fs-xl: 5rem;
-    --fs-md: 2rem;
+    --fs-xl: 3.6rem;
+    --fs-md: 1.6rem;
     --fs-sm: 1.2rem;
+  }
+
+  @media (max-width: 750px) {
+    :root {
+      --fs-xl: 2.4rem;
+      --fs-md: 1.2rem;
+      --fs-sm: 0.8rem;
+    }
   }
 
   * {
