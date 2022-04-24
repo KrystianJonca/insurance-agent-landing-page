@@ -12,17 +12,11 @@ const StyledFooter = styled.footer`
   padding: 2rem;
   text-align: center;
 
-  h3 {
-    font-weight: 400;
-    font-size: var(--fs-md);
-    letter-spacing: 2px;
-    padding: 1rem;
-  }
-
   a {
     color: ${({ theme }) => theme.light};
     cursor: pointer;
     transition: color 0.3s linear;
+    margin-bottom: 1rem;
 
     &:hover {
       color: ${({ theme }) => theme.gold};
@@ -43,8 +37,6 @@ const Footer = () => {
   return (
     <StyledFooter>
       <div className="footer-container">
-        <h3>Menu</h3>
-        <Menu footer={true} />
         <FaFacebook size={32} className="footer-icon" />
         <FaInstagram size={32} className="footer-icon" />
         <p>
