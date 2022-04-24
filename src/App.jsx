@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './components/styled/GlobalStyles';
 import theme from './theme';
 
-import { Header, AboutMe, Offer, Contact } from './components';
+import { Header, AboutMe, Offer, Contact, Footer } from './components';
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
       <AboutMe />
       <Offer />
       <Contact />
+      <Footer />
     </ThemeProvider>
   );
 };
