@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Menu from './Menu';
 import BurgerMenu from './BurgerMenu';
+import logo from '../../assets/Logo.svg';
 
 const StyledNav = styled.nav`
   display: flex;
@@ -21,7 +22,7 @@ const Navbar = () => {
   return (
     <StyledNav>
       <div className="logo">
-        <img src="/src/assets/Logo.svg" alt="Logo" />
+        <img src={logo} alt="Logo" />
       </div>
       <div>
         <BurgerMenu />
