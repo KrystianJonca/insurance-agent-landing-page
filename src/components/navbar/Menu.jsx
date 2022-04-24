@@ -8,29 +8,32 @@ const StyledMenu = styled.div`
   padding: 5px 0;
 
   @media (max-width: 576px) {
-    display: none;
+    display: ${({ footer }) => (footer ? 'flex' : 'none')};
+    flex-direction: column;
   }
 
   a {
-    padding: 0 5px;
+    color: ${({ footer, theme }) => (footer ? theme.light : theme.navy)};
+
+    padding: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     transition: color 0.3s linear;
     cursor: pointer;
 
     &:hover {
-      color: #ffce6d;
+      color: ${({ theme }) => theme.gold};
     }
   }
 `;
 
-const Menu = () => {
+const Menu = ({ footer }) => {
   const handleClick = (scrollTo) => {
     document.getElementById(scrollTo).scrollIntoView();
   };
 
   return (
-    <StyledMenu>
+    <StyledMenu footer={footer}>
       <a onClick={() => handleClick('aboutme')}>About me</a>
       <a onClick={() => handleClick('offer')}>Offer</a>
       <a onClick={() => handleClick('contact')}>Contact</a>
