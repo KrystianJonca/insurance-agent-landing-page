@@ -49,7 +49,6 @@ const StyledHeader = styled.header`
 
     @media (max-width: 1050px) {
       flex-direction: column;
-      justify-content: space-evenly;
     }
   }
 
