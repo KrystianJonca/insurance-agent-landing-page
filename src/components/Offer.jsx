@@ -48,19 +48,19 @@ const OfferSection = () => {
         <h2>I insure</h2>
         <div className="offer-icons">
           <IconWrapper>
-            <img src={HouseIcon} alt="House" />
+            <img loading="lazy" src={HouseIcon} alt="House" />
             <p>Property</p>
           </IconWrapper>
           <IconWrapper>
-            <img src={CarIcon} alt="Car" />
+            <img loading="lazy" src={CarIcon} alt="Car" />
             <p>Cars</p>
           </IconWrapper>
           <IconWrapper>
-            <img src={FamilyIcon} alt="Family Image" />
+            <img loading="lazy" src={FamilyIcon} alt="Family Image" />
             <p>Life & Health</p>
           </IconWrapper>
           <IconWrapper>
-            <img src={HeartIcon} alt="Health" />
+            <img loading="lazy" src={HeartIcon} alt="Health" />
             <p>Family</p>
           </IconWrapper>
         </div>
