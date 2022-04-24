@@ -44,7 +44,10 @@ const ScrollToTopButton = () => {
   window.addEventListener('scroll', toggleBtn);
 
   return (
-    <StyledButton onClick={scrollToTop}>
+    <StyledButton
+      onClick={scrollToTop}
+      style={{ display: isVisible ? 'inline' : 'none' }}
+    >
       <FaArrowCircleUp style={{ display: isVisible ? 'inline' : 'none' }} />
     </StyledButton>
   );
