@@ -7,6 +7,14 @@ const GlobalStyles = createGlobalStyle`
     --fs-sm: 1.2rem;
   }
 
+  @media (max-width: 1150px) {
+    :root {
+      --fs-xl: 3rem;
+      --fs-md: 1.4rem;
+      --fs-sm: 1rem;
+    }
+  }
+
   @media (max-width: 750px) {
     :root {
       --fs-xl: 2.4rem;
