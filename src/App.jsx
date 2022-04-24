@@ -1,22 +1,17 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './components/styled/GlobalStyles';
+import theme from './theme';
 
-const theme = {
-  light: '#FFFFFF',
-  gold: '#FFC36D',
-  navy: '#291b25',
-};
+import Navbar from './components/navbar/Navbar';
 
-function App() {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <div className="App">
-        <p>Hello App</p>
-      </div>
+      <Navbar />
     </ThemeProvider>
   );
-}
+};
 
 export default App;
