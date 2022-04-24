@@ -26,7 +26,8 @@ const StyledOfferSection = styled.section`
     }
 
     img {
-      max-width: 150px;
+      width: 150px;
+      height: 150px;
       display: block;
       margin: auto;
       padding: 1rem;
